@@ -13,29 +13,27 @@
     />
   </head>
   <body>
-    
-<div class="container">
-  <div class="head text-center">
+ <div class="container">
+  <div class="top">
     <h6 class="text-success">Pricing</h6>
     <h3>For teams and individuals</h3>
     <h6 class="text-secondary">Customizable LMS, AI integration for productive educators and many more...</h6>
-    <div class="toggle-btn d-flex justify-content-center m-4">
-      <span>
-        Annually
-      </span>
-      <div class="switch">
-        <input type="checkbox" id="checbox" onclick="check()" ; >
-        <label for="checkbox" class="round toggle"></label>
-      </div>
-      <span>Monthly</span>
+    <div class="toggle-btn">
+      <span style="margin: 0.8em;">Annually</span>
+      <label class="switch">
+        <input type="checkbox" id="checkbox" onclick="check()" ; />
+        <span class="slider round"></span>
+      </label>
+      <span style="margin: 0.8em;">Monthly</span>
     </div>
   </div>
   <!--  -->
-  <div class="row d-flex text-center gap-5">
+  <div class="row d-flex text-center gap-5 mt-4">
     <div class="col-sm border rounded-5 p-5">
       <h3>Hobby</h3>
       <p class="text-secondary mt-4 text-sm">For personal use. Hobby plan is free for up to 5 courses forever, no credit card required.</p>
-      <h2>$0/mo</h2>
+      <h2 class="text1">$0/mo</h2>
+      <h2 class="text2">$0/mo</h2>
       <button class="btn bg-dark text-white w-100" type="btn">Get Started</button>
     <div class="list">
       <ul class="list-unstyled">
@@ -50,12 +48,13 @@
     </div>
     </div>
     <!--  -->
-    <div class="col-sm border rounded-5 p-5 ">
+    <div class="col-sm border rounded-5 p-5 bg-black text-white">
       <h3>Pro</h3>
-      <p class="text-secondary">Advanced features for small teaching businesses. </p>
-      <p class="text-secondary">Built for scale.</p>
-      <h2>$15/member</h2>
-      <button class="btn bg-dark text-white w-100" type="btn">Get Started</button>
+      <p>Advanced features for small teaching businesses. </p>
+      <p>Built for scale.</p>
+      <h2 class="text1">$15/member</h2>
+      <h2 class="text2">$12/member</h2>
+      <button class="btn bg-white text-black w-100" type="btn">Get Started</button>
     <div class="list">
       <ul class="list-unstyled">
         <li class="my-3">&#x2713; Everything in Free</li>
@@ -70,10 +69,11 @@
     </div>
     </div>
     <!--  -->
-    <div class="col-sm col-md border rounded-5 p-5 ">
+    <div class="col-sm border rounded-5 p-5 ">
       <h3>Team</h3>
       <p class="text-secondary pb-2">Best suited for teams and larger businesses that need more control.</p>
-      <h2 class="mt-5">$50/member</h2>
+      <h2 class="mt-5 text1">$50/member</h2>
+      <h2 class="mt-5 text2">$42/member</h2>
       <button class="btn bg-dark text-white w-100" type="btn">Get Started</button>
     <div class="list">
       <ul class="list-unstyled">
@@ -98,5 +98,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
